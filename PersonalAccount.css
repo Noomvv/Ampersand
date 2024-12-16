@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 400;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    border-radius: 50px;
+    border-color: #444;
+    margin-bottom: 50px;
+}
+
+.logoOfBank{
+    display: flex;
+    align-items: center;
+}
+
+.logoOfBank img{
+    margin-right: 10px;
+}
+.navBar a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.authButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authButtons .btn{
+    margin-left: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.authButtons .language-selector{
+    background-color: #444;
+    color: #fff;
+    appearance: none;
+    outline: none;
+    
+}
+.authButtons .login{
+    background-color: #77ff33;
+    color: #111;
+    display: flex;
+    align-items: center;
+}
+.authButtons .logout{
+    background-color: palevioletred;
+    color: #111;
+}
+/* header end */
+
+/* user-info section start */
+.user-info{
+    padding: 30px 50px;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(145deg, #111, #1e1e1e);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+.user-info h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #77ff33;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+.user-info h2{
+    font-size: 30px;
+}
+.user-info h2, p{
+    text-align: left;
+}
+.balance{
+    color: #77ff33;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* user-info section end */
+
+/* Notifications section start */
+.notifications{
+    padding: 30px 50px;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(145deg, #111, #1e1e1e);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.notifications h3{
+    font-size: 50px;
+    font-weight: 700;
+    color: #77ff33;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+.requests h3{
+    font-size: 50px;
+    font-weight: 700;
+    color: #77ff33;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+/* Notifications section end */
+
+/* Recent Transactions section start */
+.transactions{
+    padding: 30px 50px;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(145deg, #111, #1e1e1e);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+/* Recent Transactions section end */
+.transactions table, .requests table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.transactions table th, .transactions table td, .requests table th, .requests table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.transactions table th, .requests table th {
+    background-color: gray;
+}
+.transactions .success {
+    color: green;
+}
+
+.transactions .pending {
+    color: orange;
+}
+
+.transactions .failed {
+    color: red;
+}
+
+.requests .approved {
+    color: green;
+}
+
+.requests .pending {
+    color: orange;
+}
+
+.requests .rejected {
+    color: red;
+}
+.account-details h3, ul {
+    list-style: none;
+    color: gray;
+}
+
+.account-details li {
+    font-size: 16px;
+}
+.notifications {
+    padding: 30px 50px;
+    background-color: #fff3e0;
+    padding: 10px;
+    border-left: 5px solid #ff9800;
+}
+
+.notification {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.graph-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #e0e0e0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Request History section start */
+.requests{
+    padding: 30px 50px;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(145deg, #111, #1e1e1e);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+.transactions h3{
+    font-size: 50px;
+    font-weight: 700;
+    color: #77ff33;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+/* Request History section end */
+
+/* Account Information section start */
+.account-details{
+    padding: 50px 50px;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(145deg, #111, #1e1e1e);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+/* Account Information section end */
+
+/*footer section start*/
+.footer{
+    margin-top: 80px;
+}
+
+#footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-logo img{
+    margin: 10px;
+}
+.footer-navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+#footer-navBar2 a{
+    margin-top: 60px;
+    margin: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.line{
+    border: none;
+    height: 2px;
+    background-color: #2b2b2b;
+    margin: 30px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+#email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+#phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#phone a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+#adress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#adress a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    border-radius: 50px;
+    border-color: #444;
+    margin-bottom: 50px;
+}
+.social-media2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media2 a{
+    gap: 15px;
+}
+.social-media2 img{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+.rights{
+    color: #444;
+}
+.privacy-policy a{
+    text-decoration: none;
+    color: #444;
+}
+/*footer section end*/

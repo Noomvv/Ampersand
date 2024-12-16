@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="Security_page.css">
+    <link rel="icon" href="../logoBalck.png">
+</head>
+<body>
+    <div class="container">
+        <!--header Start-->
+        <header class="header">
+            <div class="logoOfBank">
+                <img src="../logoBalck.png" alt="logo" width="50px">
+                <span>Ampersand <br> Bank</span>
+            </div>
+                
+            <nav class="navBar">
+                <a href="../Home_Page/Home_page.html" id="home">Home</a>
+                <a href="../Career_Page/Career_Page.html" id="career">Careers</a>
+                <a href="../About_Page/About_Page.html" id="about">About</a>
+                <a href="../Security_Page/Security_Page.html" id="cards">Cards</a>
+            </nav>
+
+            <div class="authButtons">
+                <select class="btn language-selector">
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+                <a href="../Sign In_Page/Sign In_page.html"><button class="btn signup">Sign Up</button></a>
+                <a href="../Login_Page copy/Login_page.html"><button class="btn login">Log In</button></a>
+            </div>
+        </header>
+        <!--header End-->
+
+        <!-- about cards sections start -->
+         <section class="aboutCards1">
+            <img class="aboutCards" src="../Security_Page/hero1.png" alt="">
+         </section>
+        <!-- about cards sections end -->
+
+        <!-- cards section start -->
+         <section class="cards">
+            <h1>Our Cards</h1>
+            <p>Our bank cards offer convenience, security, and exclusive benefits like cashback, rewards, and low fees. Simplify your payments and enjoy financial freedom with our trusted solutions.</p>
+            <div class="visa">
+                
+                    <img src="visa.JPEG" alt="">
+                    <div class="cardsInfo">
+                        <div class="headOfCards">
+                            <h1>VISA</h1>
+                            <a href="" onclick="return false" class="openDialog">apply for a card</a>
+                        </div>
+                        <div class="decorative-lineH"></div>
+                        <div class="moreInfo">
+                            <div class="Currency">
+                                <h3>Currency:</h3><br>
+                                <h2>USD</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="deposit">
+                                <h3>Deposit:</h3><br>
+                                <h2>5$</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="issuanceFee">
+                                <h3>Issuance Fee:</h3><br>
+                                <h2>50 000 SUM</h2>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="visa">
+                <img src="master.JPEG" alt="">
+                <div class="cardsInfo">
+                    <div class="headOfCards">
+                        <h1>MASTERCARD</h1>
+                        <a href="#" onclick="return false" class="openDialog">apply for a card</a>
+                    </div>
+                    <div class="decorative-lineH"></div>
+                        <div class="moreInfo">
+                            <div class="Currency">
+                                <h3>Currency:</h3><br>
+                                <h2>EUR</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="deposit">
+                                <h3>Deposit:</h3><br>
+                                <h2>10 €</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="issuanceFee">
+                                <h3>Issuance Fee:</h3><br>
+                                <h2>100 000 SUM</h2>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="visa">
+                <img src="uzcard.JPEG" alt="">
+                <div class="cardsInfo">
+                    <div class="headOfCards">
+                        <h1>UZCARD</h1>
+                        <a href="#" onclick="return false" class="openDialog">apply for a card</a>
+                    </div>
+                    <div class="decorative-lineH"></div>
+                        <div class="moreInfo">
+                            <div class="Currency">
+                                <h3>Currency:</h3><br>
+                                <h2>UZS</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="deposit">
+                                <h3>Deposit:</h3><br>
+                                <h2>NOT</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="issuanceFee">
+                                <h3>Issuance Fee:</h3><br>
+                                <h2>30 000 SUM</h2>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="visa">
+                <img src="humo.JPEG" alt="">
+                <div class="cardsInfo">
+                    <div class="headOfCards">
+                        <h1>HUMO</h1>
+                        <a href="" onclick="return false" class="openDialog">apply for a card</a>
+                    </div>
+                    <div class="decorative-lineH"></div>
+                        <div class="moreInfo">
+                            <div class="Currency">
+                                <h3>Currency:</h3><br>
+                                <h2>UZS</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="deposit">
+                                <h3>Deposit:</h3><br>
+                                <h2>NOT</h2>
+                            </div>
+                            <div class="decorative-line"></div>
+                            <div class="issuanceFee">
+                                <h3>Issuance Fee:</h3><br>
+                                <h2>FREE</h2>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <!-- Modal Window for Applying for a Card -->
+        <dialog id="myDialog">
+            <h2>Card Application Form</h2>
+            <form action="#" method="post">
+                <!-- Имя и фамилия -->
+                <div class="horizontaly">
+                    <input class="modalSelect" type="text" id="fullName" name="fullName" placeholder="First Name" required>
+
+                    <input class="modalSelect" type="text" id="fullName" name="fullName" placeholder="Last Name" required>
+                </div>
+                <!-- Номер паспорта -->
+                <div class="horizontaly">
+                    <input class="modalSelect" type="text" id="passportNumber" name="passportNumber" placeholder="Passport" required>
+
+                    <!-- Номер телефона -->
+                    <input class="modalSelect" type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                </div>
+                <!-- Выбор типа карты -->
+                <div class="horizontaly">
+                    <select class="modalSelect" id="cardType" name="cardType" required>
+                        <option value="" disabled selected>Select Card</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="uzcard">UzCard</option>
+                        <option value="humo">Humo</option>
+                    </select>
+
+                    <!-- Адрес доставки -->
+                    <input class="modalSelect" type="text" id="address" name="address" placeholder="Adress" required>
+                </div>
+                
+                    <!-- Дополнительная информация -->
+                    <textarea id="additionalInfo" name="additionalInfo" placeholder="Comment"></textarea>
+
+                    <!-- Кнопка отправки -->
+                    <button type="submit" class="submit">Apply</button>
+                    <button type="button" class="close" id="closeDialog">Close</button>
+                
+            </form>
+        </dialog>
+
+        <!--footer section start-->
+    <section class="footer">
+        <div id="footer-logo">
+            <img src="../logoBalck.png" alt="" width="50px">
+            <span>Ampersand <br> Bank</span>
+        </div>
+        <div class="footer-navBar">
+            <nav id="footer-navBar2">
+                <a href="../Home_Page/Home_page.html">Home</a>
+                <a href="../Career_Page/Career_Page.html">Careers</a>
+                <a href="../About_Page/About_Page.html">About</a>
+                <a href="../Security_Page/Security_Page.html">Cards</a>
+            </nav>
+        </div>
+        <div class="line"></div>
+            <div class="info">
+                <div id="email">
+                    <img src="../mail.PNG" alt="" width="20px">
+                    <a href="">AmpersandBank@gmail.com</a>
+                </div>
+                <div id="phone">
+                    <img src="../phone.PNG" alt="" width="20px">
+                    <a href="">+998335333708</a>
+                </div>
+                <div id="adress">
+                    <img src="../adress.PNG" alt="" width="20px">
+                    <a href="">Tashkent city, Istiklol 7</a>
+                </div>
+            </div>
+        <div class="line"></div>
+
+        <div class="social-media">
+            <div class="social-media2">
+                <a href="#"><img src="../facebook.PNG" alt="" width="50px"></a>
+                <a href="#"><img src="../instagram.PNG" alt="" width="50px"></a>
+                <a href="#"><img src="../telegram.PNG" alt="" width="50px"></a>
+            </div>
+            <div class="rights">
+                <p>All Rights Reserved</p>
+            </div>
+            <div class="privacy-policy">
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+    </section>
+    <!--footer section end-->
+    </div>
+    <script src="../Home_Page/scrolling.js"></script>
+    <script src="modalDialog.js"></script>
+</body>
+</html>
