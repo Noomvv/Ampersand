@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -584,3 +588,248 @@ section.visible {
     color: #444;
 }
 /*footer section end*/
+
+/* adaptive */
+/* Для экранов до 1400px */
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+/* Для экранов до 1200px */
+@media screen and (max-width: 1200px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .hero {
+        padding: 60px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .products2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .product {
+        width: calc(50% - 20px);
+    }
+
+    .feedback2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .comment {
+        width: calc(50% - 20px);
+    }
+
+    .exchange-rate {
+        margin: 20px auto;
+    }
+}
+
+/* Для экранов до 768px (планшеты) */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .logoOfBank {
+        margin-bottom: 15px;
+    }
+
+    .navBar {
+        margin: 15px 0;
+    }
+
+    .navBar a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .authButtons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .comment {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .exchange-rate {
+        padding: 30px;
+        order: 1;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        order: 0;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-media {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* Для экранов до 480px (мобильные) */
+@media screen and (max-width: 480px) {
+    .header {
+        border-radius: 25px;
+    }
+
+    .navBar {
+        /* flex-direction: column; */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navBar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .authButtons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .authButtons .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 40px 20px;
+        border-radius: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content .btn {
+        width: 100%;
+    }
+
+    .exchange-rate {
+        padding: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .exchange-rate h2 {
+        font-size: 24px;
+    }
+
+    .exchange-rate li {
+        padding: 10px 0;
+    }
+
+    .exchange-rate img {
+        width: 40px;
+        height: 28px;
+    }
+
+    .exchange-rate span {
+        font-size: 16px;
+    }
+
+    .products {
+        padding: 40px 20px;
+    }
+
+    .products h1 {
+        font-size: 32px;
+    }
+
+    .feedback {
+        padding: 40px 20px;
+    }
+
+    .feedback h1 {
+        font-size: 32px;
+    }
+
+    .footer-navBar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #footer-navBar2 a {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .social-media {
+        border-radius: 25px;
+    }
+
+    .social-media2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media screen and (max-width: 320px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+}
+/* adaptive */
